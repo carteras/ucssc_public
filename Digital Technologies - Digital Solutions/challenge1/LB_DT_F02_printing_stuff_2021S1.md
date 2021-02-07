@@ -13,7 +13,9 @@ Python: [input/output](https://docs.python.org/3/tutorial/inputoutput.html)
 
 ## Worked Examples: 
 
-### Printing a single string  
+### Simple printing
+
+#### Printing a single string  
 ```python
 print("Hello, world")
 ```
@@ -46,11 +48,45 @@ print("Ada\nBob\nCharlie")
 print("hello\tworld")
 ```
 
+### String Formatting
+
+```python
+print("Ada Bob and Charlie".title())
+```
+
+```python
+print("Ada Bob and Charlie".upper())
+```
+
+```python
+print("Ada Bob and Charlie".lower())
+```
+
+```python
+print("Ada Bob and Charlie".capitalize())
+```
+
+```python
+print("        Ada Bob and Charlie".lstrip())
+```
+
+```python
+print("Ada Bob and Charlie            ".rstrip())
+```
+
+
+```python
+print("Ada Bob and Charlie".strip())
+```
+
+```python
+print("Ada Bob and Charlie".zfill(10))
+```
 
 ### Programming Challenge 
 
 ```python
-# write a short story in python. 
+# write a short rap in python. 
 ```
 
 ```python
