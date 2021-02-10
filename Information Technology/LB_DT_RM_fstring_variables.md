@@ -24,7 +24,7 @@ When you run this code you will see:
 > Hello, World!
 ```
 
-As we mentioned before, `"Hello, World"` is a string, a blob of alpha-numeric or special characters. We can pull it out of the print statement and define it as it's own variable. 
+As I mentioned before, `"Hello, World"` is a string, a blob of alpha-numeric or special characters. We can pull it out of the print statement and define it as it's own variable. 
 
 ```python
 message = "Hello, World!"
@@ -329,7 +329,7 @@ name = input()
 name = name.strip()
 ```
 
-Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase,  titlecase, and capitalisation. 
+Store a person’s name in a variable, and then print that person’s name in lowercase, uppercase,  titlecase, and capitalization. 
 
 The input you will get is `ada lovelace`
 
