@@ -233,4 +233,3 @@ print("    Ada Bob and Charlie    ".strip())
 
 Repeat the examples given here. 
 
-
