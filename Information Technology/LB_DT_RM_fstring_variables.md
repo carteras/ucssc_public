@@ -4,7 +4,7 @@
 
 
 * Know what variables are and how to implement them for foundation cases
-* * Understand basic orders of operations in relation to variables. 
+* Understand basic orders of operations in relation to variables. 
 * Changing variable types
 * Know what f-strings are and how to use them
 * How to accept user input. 
