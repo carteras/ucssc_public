@@ -133,6 +133,30 @@ Again we can do that through Basic -> pause (100ms)
 Now, because we are in a forever loop, this will happen forever!
 ![](img/2021-02-15-12-58-48.png)
 
-## Challenge
+## Challenges
+
+### Challenge 1
 
 Your challenge is to make two blinking lights. On on Pin 9 and one on Pin 10. You want to make it so if P9 is on, then P10 is off and if P10 is on then P9 is off. 
+
+### Challenge 2
+
+Make a simple traffic light:
+
+Traffic lights have three lights: red, yellow, green. 
+
+
+* Light Starts on green
+* The user pushes the A button
+* The system pauses for 5 seconds
+* The green light changes to yellow 
+* the system pauses for 5 seconds
+* the yellow light turns off and changes to red. 
+* The system pauses for 15 seconds and then goes back to green. 
+
+Extra special challenge 
+
+* Create a second set of lights for the pedestrian crossing
+* The pedestrian crossing lights start on red
+* When the main lights turn to red the pedestrian lights turn to green
+* WHen the main lights turn back to green thee pedestrian lights turn to red. 
