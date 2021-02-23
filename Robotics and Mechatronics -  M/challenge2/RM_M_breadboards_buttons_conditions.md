@@ -160,3 +160,5 @@ Extra special challenge
 * The pedestrian crossing lights start on red
 * When the main lights turn to red the pedestrian lights turn to green
 * WHen the main lights turn back to green thee pedestrian lights turn to red. 
+
+![](2021-02-23-13-14-51.png)
