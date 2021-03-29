@@ -165,6 +165,8 @@ Why do Nelson Mandela and Eleanor Roosevelt need a different number of tabs than
 
 ### String Formatting
 
+Sometimes we get strings that aren't formatted how we like. Python gives us some tools that allow us to modify them. 
+
 #### Title case
 
 ```python
@@ -173,11 +175,14 @@ print("ada bob and charlie".title())
 ```
 #### Upper case
 
+Often in programming we get malformed string input. This can be complicated when issuing and receiving system commands which are case sensitive. One approach to handling this is to shift all commands to upper or lower case. 
+
 ```python
 print("Ada Bob and Charlie".upper())
 > ADA BOB AND CHARLIE
 ```
 #### lower case
+Often in programming we get malformed string input. This can be complicated when issuing and receiving system commands which are case sensitive. One approach to handling this is to shift all commands to upper or lower case.
 
 ```python
 print("Ada Bob and Charlie".lower())
@@ -186,7 +191,9 @@ print("Ada Bob and Charlie".lower())
 > ada bob and charlie
 ```
 
-#### Capitalise sentence
+#### Capitalize sentence
+
+Sometimes we get strings that need to be human readable by people who value capitals. We can turn strings into a normal sentence capitalization process by using the capitalize command. 
 
 ```python
 print("Ada Bob and Charlie".capitalize())
@@ -208,12 +215,18 @@ print("Walt Disney", "Steve Jobs", "Eleanor Roosevelt", "ada lovelace")
 
 ### Removing whitespace
 
+We often need to clean up whitespace from strings. Python provides us with three functions to do so. lstrp, rstrip, strip. 
+
+lstrp removes all whitespaces to the left of a string. 
+
 ```python
 print("        Ada Bob and Charlie".lstrip())
 ```
 ```
 > Ada Bob and Charlie
 ```
+
+rstrp removes all whitespaces to the right of a string. 
 
 ```python
 print("Ada Bob and Charlie            ".rstrip())
@@ -222,6 +235,7 @@ print("Ada Bob and Charlie            ".rstrip())
 > Ada Bob and Charlie
 ```
 
+strip removes it from both sides of the string. 
 
 ```python
 print("    Ada Bob and Charlie    ".strip())

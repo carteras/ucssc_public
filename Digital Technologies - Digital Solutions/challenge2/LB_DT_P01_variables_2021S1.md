@@ -37,6 +37,7 @@ print(3+2) # 3 + 2 = 5
 print(3-2) # 3 - 2 = 1
 print(3*2) # 3 * 2 = 6
 print(3/2) # 3 / 2 = 1.5 (be careful of old versions)
+print(3//2) # 3 floor divide 2
 print(3**2)# 3^2 = 3*3 = 9
 print(3%2) # 3%2 = 1 (3/2 = 1 with 1 remaining
 ```
@@ -49,6 +50,17 @@ print(foo)
 
 
 Getting user input: 
+There are many times we need to get input from users and systems. Python gives us a tool called `input()`. 
+
+If you are asking a person, you can fill it with some context so they know what you want. 
+
+```python
+name = input('Hey, what is your name?")
+print(name)
+```
+
+However, if you are asking CTFd, you leave the context string free. CTFd will just give you an error. 
+
 ```python
 name = input('Hey, what is your name?")
 print(name)
