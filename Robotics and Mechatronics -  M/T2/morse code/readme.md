@@ -2,7 +2,8 @@
 
 ## You will learn
 * How to use the LED light
-* How to create a function wto 
+* How to create a function
+* How to reuse code with a function 
 ## Topic 
 
 ### Making a light
@@ -32,14 +33,14 @@ Let's make some functions.
 
 ![](2021-04-19-13-07-32.png)
 
-We are going to make two functions. dit and dot. Both functions will flash a light for some time. dit flash will be for 200ms and dot flash will be for 1000ms
+We are going to make two functions. dot and dash. Both functions will flash a light for some time. Dot flash will be for 200ms and dot flash will be for 1000ms
 
 
 ![](2021-04-19-13-21-09.png)
 
-Remembering that dit function turns a light on for 200ms and then turns it off. We can write the blocks in to allow that.
+Remembering that dot function turns a light on for 200ms and then turns it off. We can write the blocks in to allow that.
 
-Before you scroll down to to the next section. See if you can write your own dot function (pausing for 1000 ms)
+Before you scroll down to to the next section. See if you can write your own dot function (pausing for 1000ms)
 
 ![](2021-04-19-13-21-33.png)
 
@@ -47,7 +48,7 @@ Before you scroll down to to the next section. See if you can write your own dot
 Setting up the dash function is pretty easy. 
 ![](2021-04-19-13-21-57.png)
 
-Finally, let's make morse code type a letter. In this case we are going to write the letter s.
+Finally, let's make Morse code type a letter. In this case we are going to write the letter s.
 
 ![](2021-04-19-13-23-17.png)
 
@@ -67,3 +68,13 @@ The second thing, is you will need to create two new functions to define the spa
 
 Spaces between letters is 200ms
 Spaces between words is 7000ms
+
+Create a power point / google slide presentation that: 
+* Explains how you turn on and off an LED
+  * What does the pin mean? 
+  * How do you turn a pin on and then off again?
+  * Why do we have to pause after giving an instruction? 
+* How to create a function
+  * Where do you find the functions block?
+  * What is the best way to name a function? 
+  * Why might we use functions? 
