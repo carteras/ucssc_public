@@ -42,4 +42,5 @@ In the meantime, I have created this process to solve as many problems as I can.
 ![](2021-04-20-09-23-53.png)
 
 * Retry running your python script
+
 ![](2021-04-20-09-24-18.png)
