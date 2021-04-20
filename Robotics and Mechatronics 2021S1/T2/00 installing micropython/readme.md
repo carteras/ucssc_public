@@ -16,13 +16,13 @@
 
 1. Download esp32-idf4-20210202-v1.14.bin
 2. Open Visual Studio Code
-3. python -m pip install esptool 
-4. type mode  
-5. esptool.py --chip esp32 --port COM3 write_flash -z 0x1000 d:/github/esp32-idf4-20210202-v1.14.bin 
-6. python -m pip install --user adafruit-ampy
-7. ampy –help 
-8. ampy -p COM3 ls 
-9. ampy --port COM3 put blink.py main.py 
+3. `python -m pip install esptool `
+4. type `mode`  
+5. `esptool.py --chip esp32 --port COM3 write_flash -z 0x1000 d:/github/esp32-idf4-20210202-v1.14.bin `
+6. `python -m pip install --user adafruit-ampy`
+7. `ampy –help` 
+8. `ampy -p COM3 ls` 
+9. `ampy --port COM3 put blink.py main.py` 
 
 **Detailed instructions**   
 You need to download the `esp32-idf4-20210202-v1.14.bin` binary file from google classrooms. You can find it under `Week 10: Installing Micropython`. You might download `blink.py` as well. 
@@ -31,7 +31,7 @@ Open up Visual Studio Code. Once VSC is open, look at the bottom of the screen. 
 
 ![](2021-04-18-11-26-48.png)
 
-Click on Terminal and change the terminal type to powershell. 
+Click on Terminal and change the terminal type to PowerShell. 
 
 ![](2021-04-18-11-27-10.png)
 
@@ -54,7 +54,7 @@ Look for the device that has support for `Baud: 115200`. At home, this port is C
 Use esptool.py to upload micropython to your Huzzah. 
 `esptool.py --chip esp32 --port COM3 write_flash -z 0x1000 d:/github/esp32-idf4-20210202-v1.14.bin`
 
-Note, my `esp32-idf4-20210202-v1.14.bin` was stored in my github directory. You will need to change your directory so it matches where you have saved yours. 
+Note, my `esp32-idf4-20210202-v1.14.bin` was stored in my GitHub directory. You will need to change your directory so it matches where you have saved yours. 
 
 Install AMPY 
 `python -m pip install --user adafruit-ampy`
@@ -89,7 +89,7 @@ Your board should be blinking on and off 10 times.
 
 ## Cleaning/maintaining Micropython devices 
 Sometimes you will want to delete files on your Board. Let's delete main.py. `ampy -p COM3 rm main.py` 
-rm means remove
+`rm` means remove
 
 Let's check to see if that worked: `ampy -p COM3 ls` shows 
 ```
@@ -108,6 +108,18 @@ To help build your understanding of micropython, ampy, and microcontrollers, you
 1. Copy the blink.py and name it rapid_blinking.py. Modify this script so it will blink on and off with 0.2 second delays. 
 2. Copy the rapid_blnking.py file and name it lots_of_rapid_blinking.py. Modify this script so that it will blink on and off 100 times. 
 ### Intermediate Challenge
-3. Copy blink.py and name it morse_what.py. Modify this script so it will write your name in morse code. 
+3. Copy blink.py and name it morse_what.py. Modify this script so it will write your name in Morse code. 
 
+## Write up
+
+Create a PowerPoint/google-slide presentation and respond to the following points: 
+
+* Installing Micropython
+  * What is esptool?
+  * What is AMPY?
+* Maintaining a Micropython Microcontroller
+  * How do we discover which COM port the microcontroller is on?
+  * What are the basic commands for managing the contents of the microcontrollers?
+  * How to upload code to the microcontroller
+  * Things for future you to consider when making programs
 

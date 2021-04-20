@@ -78,7 +78,7 @@ At the middle-top of the window, you will see 6 icons. I want you to click the d
 Because I started on line 1 and I have now stepped to line 3 (because there is nothing on line 2) I have a new function variable in my variable list: 
 ![](2021-04-18-13-51-26.png)
 
-We've just imported randint into this program and the debugger shows that. 
+We've just imported `randint` into this program and the debugger shows that. 
 
 Press step into again. 
 
@@ -265,3 +265,15 @@ for galaxy in galaxies:
     galaxy_type = galaxy[2]
     print(f'Hey, did you know that the {name} {distance} {galaxy_type}')
 ```
+
+## Write up
+
+Create a small PowerPoint/google-slide presentation and respond to the following points: 
+
+* What is the python debugger? 
+* How do you use the Python Debugger to stop and investigate code?
+  * How do you run a python file in the debugger?
+  * How do you use a single breakpoint?
+* How do you move through code using the Python Debugger?
+  * What does continue, step-over, step-into, and step-out do?
+  * How do you watch variables? 
