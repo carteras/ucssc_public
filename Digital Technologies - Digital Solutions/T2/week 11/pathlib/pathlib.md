@@ -60,9 +60,14 @@ Generally speaking the point of using a path is to access a file or database to 
 Pathlib has it's own open implementation so we connect our path object and open with dot syntax. 
 
 ```python
-path = pathlib.Path.cwd()
-with path.open(path / "file.txt") as file_reader:
-    for line in file_reader:
+from pathlib import Path
+
+digital_technologies_path = Path("Digital Technologies - Digital Solutions/T2/week 11/pathlib/test/")
+
+print('-'*50)
+with open(digital_technologies_path / 'foo.txt' , 'r') as fr:
+    for line in fr:
+        line = line.strip()
         print(line)
 ```
 
