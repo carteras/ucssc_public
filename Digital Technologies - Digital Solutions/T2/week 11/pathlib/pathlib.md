@@ -32,8 +32,8 @@ NOTE: You will want to change your path to something that makes sense to you. Ma
 
 Create a python file called `paths2.py`
 ```python 
-import pathlib
-p = pathlib.Path("c:/Users/carte/Desktop/github/ucssc/2021\Digital Technologies - Digital Solutions/T2/week 11/pathlib/")
+from pathlib import Path 
+p = Path("C:/Users/carte/Desktop/github/ucssc/2021")
 print(p)
 ```
 
@@ -44,13 +44,10 @@ More often than not, we will want to do something that combines different parts 
 Create a new python file called `paths3.py`
 
 ```python
-import pathlib
-digital_technologies_path = pathlib.Path.cwd()
-week_11 = pathlib.Path('Week 11/')
-pathlib_path = pathlib.Path('pathlib/')
+from pathlib import Path 
 
-all_together_now = digital_technologies_path / week_11 / pathlib_path
-print('> ', all_together_now)
+p = Path("C:/Users/carte/Desktop/github/ucssc/2021")
+print(p/'test.txt')
 ```
 
 ### Reading and Writing Files
@@ -59,16 +56,18 @@ Generally speaking the point of using a path is to access a file or database to 
 
 Pathlib has it's own open implementation so we connect our path object and open with dot syntax. 
 
+reading a file
 ```python
 from pathlib import Path
 
-digital_technologies_path = Path("Digital Technologies - Digital Solutions/T2/week 11/pathlib/test/")
+source_path = Path.cwd()
+destination_path = source_path / "copy_to"
+file_path = source_path / "test.txt"
 
-print('-'*50)
-with open(digital_technologies_path / 'foo.txt' , 'r') as fr:
-    for line in fr:
-        line = line.strip()
-        print(line)
+if source_path.exists():
+    with file_path.open(mode='r') as file_reader:
+        for line in file_reader:
+            print(line)
 ```
 
 ### Moving files
@@ -78,11 +77,7 @@ This is a hacky way of handling the moving of files. The best way of handling th
 Create 
 ```python
 import pathlib
-file_name = source / "text.txt"
-if not destination.exists():
-    with destination.open(file_name, 'w') as file_writer:
-        for line in file_writer:
-            file_writer.write(line)
+
 ```
 
 easier way: 
