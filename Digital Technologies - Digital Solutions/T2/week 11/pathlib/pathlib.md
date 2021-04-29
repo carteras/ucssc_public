@@ -72,11 +72,22 @@ if source_path.exists():
 
 ### Moving files
 
-This is a hacky way of handling the moving of files. The best way of handling this is to 
-
-Create 
+Using pathlib we can locate the two paths and then just write to each other
 ```python
-import pathlib
+from pathlib import Path
+
+digital_tech_path = Path(r'Digital Technologies - Digital Solutions\T2\week 11\pathlib\test')
+file_source = 'foo/'
+file_name = 'animal.jpg'
+file_path = digital_tech_path / file_source / file_name
+
+destination = digital_tech_path / Path("temp/")
+
+destination.mkdir(parents=True, exist_ok=True)
+destination_file = destination / file_name
+
+destination_file.write_bytes(file_path.read_bytes())
+#destination_file.write_text(file_path.read_text())
 
 ```
 
@@ -93,15 +104,30 @@ shutil.copy(my_file, to_file)
 ```
 
 ### Deleting files
+
+To delete a file we use the unlink command. Unlink removes the file system pointer from the file allowing the operating system to remove it when there are available resources. If the path points to a directory, use Path.rmdir() instead.
+
 ```python
 from pathlib import Path
-folder = Path.cwd() / "foo/"
-folder.rmdir()
-file_name = Path.cwd() / "test.txt"
-file_name.unlink()
+
+digital_tech_path = Path(r'Digital Technologies - Digital Solutions\T2\week 11\pathlib\test')
+file_source = 'foo/'
+file_name = 'animal.jpg'
+file_path = digital_tech_path / file_source / file_name
+
+destination = digital_tech_path / Path("temp/")
+
+destination.mkdir(parents=True, exist_ok=True)
+destination_file = destination / file_name
+
+destination_file.write_bytes(file_path.read_bytes())
+
+destination_file.unlink()
+
 
 ```
 ### Making a new directory
+To make a new directory we use the `mkdir` command. This is a replication of posix system commands. 
 
 ```python
 from pathlib import Path
@@ -112,9 +138,23 @@ p.mkdir(parents=True, exist_ok = True)
 
 ### Listing files in a directory
 ```python
-from pathlib import Path 
+from pathlib import Path
 
-files = Path.cwd().glob('*\.')
+digital_tech_path = Path(r'Digital Technologies - Digital Solutions\T2\week 11\pathlib\test')
+file_source = 'foo/'
+file_name = 'animal.jpg'
+file_path = digital_tech_path / file_source / file_name
+
+destination = digital_tech_path / Path("temp/")
+
+destination.mkdir(parents=True, exist_ok=True)
+destination_file = destination / file_name
+
+destination_file.write_bytes(file_path.read_bytes())
+
+# destination_file.unlink()
+
+files = destination.glob('*\.')
 for f in files:
     if f.is_file():
         print(f)
