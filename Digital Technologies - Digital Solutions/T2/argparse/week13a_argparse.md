@@ -294,6 +294,10 @@ PS D:\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>
 
 ## Challenges
 
+### Basic Challenge
+
+One of the problems you may face is that you will have mutually exclusive options
+
 ### Intermediate Challenges
 
 * Accept a string and capitalize it depending on optional flags, --upper, --lower, --capitalize, --title.
@@ -305,3 +309,81 @@ PS D:\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>
 
 * * if in all scenarios if the string is already in that case add "UNMODIFIED: " to the start of the string
 * * if modified add: "MODIFIED: " to the start of  the string
+
+Example output: 
+
+```nginx
+PS C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse> .\dontupload.bat
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "the quick red fox jumped over the lazy hound" --upper 
+MODIFIED:  THE QUICK RED FOX JUMPED OVER THE LAZY HOUND
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "the quick red fox jumped over the lazy hound" --lower 
+UNMODIFIED:  the quick red fox jumped over the lazy hound
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "the quick red fox jumped over the lazy hound" --title 
+MODIFIED:  The Quick Red Fox Jumped Over The Lazy Hound
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "the quick red fox jumped over the lazy hound" --capitalize
+MODIFIED:  The quick red fox jumped over the lazy hound
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "the quick red fox jumped over the lazy hound" -u      
+MODIFIED:  THE QUICK RED FOX JUMPED OVER THE LAZY HOUND
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "the quick red fox jumped over the lazy hound" -l      
+UNMODIFIED:  the quick red fox jumped over the lazy hound
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "the quick red fox jumped over the lazy hound" -t      
+MODIFIED:  The Quick Red Fox Jumped Over The Lazy Hound
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "the quick red fox jumped over the lazy hound" -c      
+MODIFIED:  The quick red fox jumped over the lazy hound
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "THE QUICK RED FOX JUMPED OVER THE LAZY HOUND" --upper 
+UNMODIFIED:  THE QUICK RED FOX JUMPED OVER THE LAZY HOUND
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "THE QUICK RED FOX JUMPED OVER THE LAZY HOUND" --lower 
+MODIFIED:  the quick red fox jumped over the lazy hound
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "THE QUICK RED FOX JUMPED OVER THE LAZY HOUND" --title 
+MODIFIED:  The Quick Red Fox Jumped Over The Lazy Hound
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "THE QUICK RED FOX JUMPED OVER THE LAZY HOUND" --capitalize
+MODIFIED:  The quick red fox jumped over the lazy hound
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "THE QUICK RED FOX JUMPED OVER THE LAZY HOUND" -u      
+UNMODIFIED:  THE QUICK RED FOX JUMPED OVER THE LAZY HOUND
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "THE QUICK RED FOX JUMPED OVER THE LAZY HOUND" -l      
+MODIFIED:  the quick red fox jumped over the lazy hound
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "THE QUICK RED FOX JUMPED OVER THE LAZY HOUND" -t      
+MODIFIED:  The Quick Red Fox Jumped Over The Lazy Hound
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "THE QUICK RED FOX JUMPED OVER THE LAZY HOUND" -c      
+MODIFIED:  The quick red fox jumped over the lazy hound
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "THE QUIck RED FoX JuMPED OVEr THE lazy houND" --upper 
+MODIFIED:  THE QUICK RED FOX JUMPED OVER THE LAZY HOUND
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "THE QUIck RED FoX JuMPED OVEr THE lazy houND" --lower 
+MODIFIED:  the quick red fox jumped over the lazy hound
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "THE QUIck RED FoX JuMPED OVEr THE lazy houND" --title 
+MODIFIED:  The Quick Red Fox Jumped Over The Lazy Hound
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "THE QUIck RED FoX JuMPED OVEr THE lazy houND" --capitalize
+MODIFIED:  The quick red fox jumped over the lazy hound
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "THE QUIck RED FoX JuMPED OVEr THE lazy houND" -u      
+MODIFIED:  THE QUICK RED FOX JUMPED OVER THE LAZY HOUND
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "THE QUIck RED FoX JuMPED OVEr THE lazy houND" -l      
+MODIFIED:  the quick red fox jumped over the lazy hound
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "THE QUIck RED FoX JuMPED OVEr THE lazy houND" -t      
+MODIFIED:  The Quick Red Fox Jumped Over The Lazy Hound
+
+C:\Users\carte\Desktop\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>python .\week13a_challenge1.py "THE QUIck RED FoX JuMPED OVEr THE lazy houND" -c      
+MODIFIED:  The quick red fox jumped over the lazy hound
+```
