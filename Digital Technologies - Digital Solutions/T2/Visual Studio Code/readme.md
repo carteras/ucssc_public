@@ -65,13 +65,3 @@ while count < 10_000:
     numbers.append(randint(1, 1_000_000))
     count += 1
 ```
-
-
-## Write up
-
-Extend your PowerPoint/google-slide presentation and respond to the following points: 
-
-* Maintaining code in Visual Studio Code
-  * How do you create a workspace?
-  * How do you create a file?
-* How do you execute a file in Visual Studio Code?

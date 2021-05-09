@@ -61,7 +61,7 @@ Challenges are used to help refine your understanding and knowledge of a topic.
 
 In this challenge, you are asked to write your name in Morse code. 
 
-There are two things you need to know to complete this. The combinations of dits and dots to make letters. 
+There are two things you need to know to complete this. The combinations of dots and dashes to make letters. 
 https://en.wikipedia.org/wiki/Morse_code
 
 The second thing, is you will need to create two new functions to define the space between letters and words. 

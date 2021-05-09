@@ -12,17 +12,17 @@
 
 ## Installing Micropython
 ### Microcontrollers hello world
-**tl;dr instructions:** 
+**short instructions:** 
 
 1. Download esp32-idf4-20210202-v1.14.bin
 2. Open Visual Studio Code
-3. `python -m pip install esptool `
-4. type `mode`  
-5. `esptool.py --chip esp32 --port COM3 write_flash -z 0x1000 d:/github/esp32-idf4-20210202-v1.14.bin `
-6. `python -m pip install --user adafruit-ampy`
-7. `ampy –help` 
-8. `ampy -p COM3 ls` 
-9. `ampy --port COM3 put blink.py main.py` 
+3. python -m pip install esptool 
+4. type mode  
+5. esptool.py --chip esp32 --port COM3 write_flash -z 0x1000 d:/github/esp32-idf4-20210202-v1.14.bin 
+6. python -m pip install --user adafruit-ampy
+7. ampy –help 
+8. ampy -p COM3 ls 
+9. ampy --port COM3 put blink.py main.py 
 
 **Detailed instructions**   
 You need to download the `esp32-idf4-20210202-v1.14.bin` binary file from google classrooms. You can find it under `Week 10: Installing Micropython`. You might download `blink.py` as well. 
@@ -110,16 +110,4 @@ To help build your understanding of micropython, ampy, and microcontrollers, you
 ### Intermediate Challenge
 3. Copy blink.py and name it morse_what.py. Modify this script so it will write your name in Morse code. 
 
-## Write up
-
-Create a PowerPoint/google-slide presentation and respond to the following points: 
-
-* Installing Micropython
-  * What is esptool?
-  * What is AMPY?
-* Maintaining a Micropython Microcontroller
-  * How do we discover which COM port the microcontroller is on?
-  * What are the basic commands for managing the contents of the microcontrollers?
-  * How to upload code to the microcontroller
-  * Things for future you to consider when making programs
 
