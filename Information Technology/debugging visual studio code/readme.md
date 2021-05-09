@@ -33,7 +33,7 @@ In the meantime, I have created this process to solve as many problems as I can.
 
 ![](2021-04-20-09-22-17.png)
 
-* Type `$env:Path += ';C:\Program Files\Python39'`
+* Type `$env:Path += ';C:\Program Files\Python39'
 
 ![](2021-04-20-09-23-21.png)
 
