@@ -124,6 +124,43 @@ adam = {
 }
 
 for key in adam:
-  print(f'This is the key {key}, and with it I can get the value {adam[key]})
+  print(f'This is the key {key}, and with it I can get the value {adam[key]}')
 ```
 
+### Looping through all values in a dictionary
+
+```python
+adam = {
+  'hair':'ginger',
+  'eyes':'hazel',
+  'height':'tall',
+  'profession':'nerdwrangler',
+  'given_name':'adam'
+}
+
+for feature in adam.values():
+    print(feature)
+```
+
+### Data structures in Dictionaries
+```python
+people = {}
+people['adam'] = {
+    'hair':'ginger',
+    'eyes':'hazel',
+    'height':'tall',
+    'profession':'nerdwrangler',
+    'given_name':'adam'
+}
+people['ada'] = {
+    'hair':'brown',
+    'eyes':'blue',
+    'height':'average',
+    'profession':'nerd',
+    'given_name':'ada'
+}
+
+for key in people:
+    print(key, people[key]['profession'])
+
+```
