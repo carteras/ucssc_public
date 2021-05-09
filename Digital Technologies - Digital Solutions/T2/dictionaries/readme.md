@@ -1,4 +1,4 @@
-##Python Programming: Dictionaries
+## Python Programming: Dictionaries
 
 A dictionary is a key-pair collection which is ordered by when the elements are inserted. 
 
@@ -65,7 +65,7 @@ print('Teachers, what is your profession!')
 print(f"{adam['given_name']}: is a {adam['profession']}")
 ```
 
-###Adding new key-value pairs
+### Adding new key-value pairs
 
 Dictionaries are dynamic in nature. This means that you can add new key-value pairs at any time. 
 
@@ -83,7 +83,7 @@ adam['family_name'] = 'carter
 print(adam)
 ```
 
-###Modifying a value 
+### Modifying a value 
 The values of a dictionary are also dynamic. 
 ```python
 adam = {
@@ -98,7 +98,7 @@ adam['hair'] = 'ginger striped with silver'
 print(adam['hair'])
 ```
 
-###Removing a key-value pair
+### Removing a key-value pair
 Like lists, we can remove a key-value pair with the `del` command
 ```python
 adam = {
