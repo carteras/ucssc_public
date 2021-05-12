@@ -296,7 +296,7 @@ PS D:\github\ucssc\2021\Digital Technologies - Digital Solutions\T2\argparse>
 
 ### Basic Challenge
 
-One of the problems you may face is that you will have mutually exclusive options
+One of the problems you may face is that you will have mutually exclusive options. Use your google foo to find out how to manage this. 
 
 ### Intermediate Challenges
 
