@@ -1,10 +1,20 @@
 from argparse import ArgumentParser
-
 parser = ArgumentParser()
-parser.add_argument('square', type=int, help="display a square of a given number")
-parser.add_argument("-v", "--verbosity", help="increase output verbosity", action="store_true")
+
+# parser.add_argument("echo", help="Echos the string that you entered")
+parser.add_argument('square', help='Squares the given number', type=int)
+
+parser.add_argument(
+    '-w',
+    '--wordy', 
+    help='increases the wordyness of the answer',
+    action='store_true'
+)
+
 args = parser.parse_args()
-if args.verbosity:
-    print(f"The square of {args.square} equals {args.square**2}")
+
+print(args)
+if args.wordy:
+    print(f'{args.square}**2=={args.square**2}')
 else:
     print(args.square**2)
