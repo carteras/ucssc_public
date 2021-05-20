@@ -1,2 +1,5 @@
 env
 Pathlib
+hashs
+hexdigest
+Hashlib
