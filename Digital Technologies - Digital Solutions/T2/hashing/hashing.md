@@ -151,7 +151,9 @@ from hashlib import md5, sha256
 def make_hash(file_path, algorithm='md5'):
     """ creates either MD5 or SHA256 hashes from files
     
-    This function takes the file_path of a file and creates a hash. The hash is selected as md5 as default but can be switched to SHA256 by using the algorithm keyword argument. 
+    This function takes the file_path of a file and creates a hash. 
+    The hash is selected as md5 as default but can be switched to SHA256 by 
+    using the algorithm keyword argument. 
 
     Parameters:
     file_path: a pathlib path of the file to be hashed
