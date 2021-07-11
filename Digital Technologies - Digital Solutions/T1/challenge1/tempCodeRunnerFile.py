@@ -1,1 +1,0 @@
-apitalize(), "ada lovelace".title())

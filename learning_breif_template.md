@@ -32,6 +32,10 @@
 
 ### Detail
 
+## Literacy Corner
+
+### Literacy Questions
+
 ## Challenges
 
 ### Intermediate Challenges

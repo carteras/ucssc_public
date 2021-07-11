@@ -1,0 +1,18 @@
+Analysis of design process and explains decision making
+
+analysis of technology concepts and principles 
+
+describe and demonstrate the strategy of the digital forensics technology
+
+Design diagram of main/example problem (boxes and arrows)
+
+----
+
+•	evaluate and use technologies in a range of contexts
+•	produce or create solutions or products to address a need, problem or challenge
+•	create a mechatronic or robotic system using electronic and mechanical control system with input and output, for example, a lolly dispenser
+•	apply a design process to solve a problem or address a need
+•	investigate strategies to program and control robotic or mechanised systems, for example, using sensors and components
+
+
+
